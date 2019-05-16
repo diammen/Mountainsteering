@@ -29,8 +29,6 @@ public class PlayerController : MonoBehaviour {
         {
             Vector3 rotInput = new Vector3(0, Mathf.Atan2(xRaw, yRaw) * Mathf.Rad2Deg, 0);
 
-            Quaternion lastRot = Quaternion.Euler(rotInput);
-
             Quaternion newRot = Quaternion.Euler(rotInput);
 
             rb.rotation = Quaternion.Lerp(transform.rotation, newRot, rotSpeed * Time.deltaTime);

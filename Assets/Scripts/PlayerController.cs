@@ -25,11 +25,6 @@ public class PlayerController : MonoBehaviour {
 
         rb.AddForce(new Vector3(transform.forward.x, 0, transform.forward.z) * triggerRaw * movSpeed * Time.deltaTime, ForceMode.Impulse);
 
-        //RaycastHit hit;
-        //Physics.Raycast(transform.position, transform.forward, out hit);
-        //Debug.DrawRay(transform.position, transform.forward);
-        //transform.up -= (transform.up - hit.normal) * 0.1f;
-
         if (Input.GetAxis(xAxis) != 0 || Input.GetAxis(yAxis) != 0)
         {
             Vector3 rotInput = new Vector3(0, Mathf.Atan2(xRaw, yRaw) * Mathf.Rad2Deg, 0);

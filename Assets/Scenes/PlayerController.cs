@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+    public Rigidbody rb;
     public string xAxis, yAxis;
+    public string triggerAxis;
     public float movSpeed;
+    public float rotSpeed;
 
     // Use this for initialization
     void Start()
     {
-
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -18,7 +21,14 @@ public class PlayerController : MonoBehaviour {
     {
         float yRaw = Input.GetAxis(yAxis);
         float xRaw = Input.GetAxis(xAxis);
+        float triggerRaw = Mathf.Clamp(Input.GetAxis(triggerAxis), -1, 0);
 
-        transform.position = new Vector3(transform.position.x + xRaw * movSpeed * Time.deltaTime, transform.position.y, transform.position.z + yRaw * movSpeed * Time.deltaTime);
+        rb.AddForce(transform.forward * triggerRaw * movSpeed * Time.deltaTime);
+
+        Vector3 rotInput = new Vector3(0, Mathf.Atan2(xRaw, yRaw) * Mathf.Rad2Deg, 0);
+
+        Quaternion newRot = Quaternion.Euler(rotInput);
+
+        rb.rotation = Quaternion.Lerp(transform.rotation, newRot, rotSpeed * Time.deltaTime);
     }
 }

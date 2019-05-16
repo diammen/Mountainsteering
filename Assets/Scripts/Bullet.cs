@@ -4,13 +4,22 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+    public float lifetime, timer;
+
+
+	void Awake () {
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+        timer += Time.deltaTime;
+
+        if (timer >= lifetime)
+        {
+            timer = 0;
+
+            GetComponent<Rigidbody>().velocity = Vector3.zero;
+            gameObject.SetActive(false);
+        }
 	}
 }

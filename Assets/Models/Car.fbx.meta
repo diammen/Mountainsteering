@@ -4,11 +4,97 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: polySurface47
+    100004: polySurface48
+    100006: polySurface49
+    100008: polySurface50
+    100010: polySurface51
+    100012: polySurface52
+    100014: polySurface52 1
+    100016: polySurface53
+    100018: polySurface54
+    100020: polySurface55
+    100022: polySurface56
+    100024: polySurface57
+    100026: polySurface58
+    100028: polySurface59
+    100030: polySurface60
+    100032: polySurface61
+    100034: polySurface62
+    100036: polySurface63
+    100038: polySurface64
+    100040: polySurface65
+    100042: polySurface66
+    100044: polySurface67
+    100046: transform19
+    100048: transform20
+    100050: transform21
+    100052: transform22
+    100054: transform23
+    100056: transform24
+    100058: transform25
+    100060: transform26
+    100062: transform27
+    100064: transform28
+    100066: transform29
+    100068: transform30
+    100070: transform31
+    100072: transform32
+    100074: transform33
+    100076: transform34
+    100078: transform35
+    100080: transform36
+    100082: transform37
+    100084: transform38
+    100086: transform39
     400000: //RootNode
+    400002: polySurface47
+    400004: polySurface48
+    400006: polySurface49
+    400008: polySurface50
+    400010: polySurface51
+    400012: polySurface52
+    400014: polySurface52 1
+    400016: polySurface53
+    400018: polySurface54
+    400020: polySurface55
+    400022: polySurface56
+    400024: polySurface57
+    400026: polySurface58
+    400028: polySurface59
+    400030: polySurface60
+    400032: polySurface61
+    400034: polySurface62
+    400036: polySurface63
+    400038: polySurface64
+    400040: polySurface65
+    400042: polySurface66
+    400044: polySurface67
+    400046: transform19
+    400048: transform20
+    400050: transform21
+    400052: transform22
+    400054: transform23
+    400056: transform24
+    400058: transform25
+    400060: transform26
+    400062: transform27
+    400064: transform28
+    400066: transform29
+    400068: transform30
+    400070: transform31
+    400072: transform32
+    400074: transform33
+    400076: transform34
+    400078: transform35
+    400080: transform36
+    400082: transform37
+    400084: transform38
+    400086: transform39
     2100000: lambert1
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: polySurface47
+    2300000: polySurface52
+    3300000: polySurface52
+    4300000: polySurface52
   externalObjects: {}
   materials:
     importMaterials: 1

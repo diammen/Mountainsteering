@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Flag : MonoBehaviour {
-    [SerializeField] move player;
 
 	void OnTriggerEnter(Collider other)
     {
         //attatch Flag to flag poll on the player
         if (other.CompareTag("Player")) {
             transform.parent = other.transform;
-            transform.localPosition = other.transform.Find("FlagPoll").transform.localPosition;
-            player.PickUpFlag();
+            transform.localPosition = other.transform.Find("FlagPole").transform.localPosition;
+            other.GetComponent<FlagPickUp>().PickUpFlag();
         }
     }
 }

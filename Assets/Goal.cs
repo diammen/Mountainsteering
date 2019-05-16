@@ -7,7 +7,7 @@ public class Goal : MonoBehaviour {
 	void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player")){
-            if (other.GetComponent<move>().HasFlag == true)
+            if (other.GetComponent<FlagPickUp>().hasFlag == true)
             {
                 print(other.name + " wins");
             }

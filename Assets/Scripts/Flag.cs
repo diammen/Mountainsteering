@@ -10,7 +10,7 @@ public class Flag : MonoBehaviour {
         //attatch Flag to flag poll on the player
         if (other.CompareTag("Player")) {
             transform.parent = other.transform;
-            transform.localPosition = other.transform.GetChild(0).transform.localPosition;
+            transform.localPosition = other.transform.Find("FlagPoll").transform.localPosition;
             player.PickUpFlag();
         }
     }

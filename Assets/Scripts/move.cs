@@ -30,8 +30,8 @@ public class move : MonoBehaviour {
     //Drops the flag behind the player
     public void DropFlag()
     {
-        transform.GetChild(1).position = transform.position - transform.forward;
-        transform.GetChild(1).transform.parent = null;
+        transform.Find("FlagPoll").position = transform.position - transform.forward;
+        transform.Find("FlagPoll").transform.parent = null;
         HasFlag = false;
     }
 }

@@ -9,7 +9,7 @@ public class Goal : MonoBehaviour {
         if (other.CompareTag("Player")){
             if (other.GetComponent<move>().HasFlag == true)
             {
-                print(other.name + "wins");
+                print(other.name + " wins");
             }
         }
     }

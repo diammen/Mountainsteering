@@ -1,14 +1,17 @@
 fileFormatVersion: 2
-guid: 95deba86691e05a45999d30b01f79921
+guid: 1d111fb551ae3764e961d7a21ccae205
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert4
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: polySurface72
+    100000: Group26224
+    100002: //RootNode
+    400000: Group26224
+    400002: //RootNode
+    2100000: Group26224Mat
+    2300000: Group26224
+    3300000: Group26224
+    4300000: Group26224
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1

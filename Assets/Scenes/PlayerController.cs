@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         float yRaw = Input.GetAxis(yAxis);
         float xRaw = Input.GetAxis(xAxis);
@@ -26,10 +26,15 @@ public class PlayerController : MonoBehaviour {
 
         rb.AddForce(transform.forward * triggerRaw * movSpeed * Time.deltaTime, ForceMode.Impulse);
 
-        Vector3 rotInput = new Vector3(0, Mathf.Atan2(xRaw, yRaw) * Mathf.Rad2Deg, 0);
+        if (Input.GetAxis(xAxis) != 0 || Input.GetAxis(yAxis) != 0)
+        {
+            Vector3 rotInput = new Vector3(0, Mathf.Atan2(xRaw, yRaw) * Mathf.Rad2Deg, 0);
 
-        Quaternion newRot = Quaternion.Euler(rotInput);
+            Quaternion lastRot = Quaternion.Euler(rotInput);
 
-        rb.rotation = Quaternion.Lerp(transform.rotation, newRot, rotSpeed * Time.deltaTime);
+            Quaternion newRot = Quaternion.Euler(rotInput);
+
+            rb.rotation = Quaternion.Lerp(transform.rotation, newRot, rotSpeed * Time.deltaTime);
+        }
     }
 }

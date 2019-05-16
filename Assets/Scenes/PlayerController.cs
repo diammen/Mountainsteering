@@ -21,8 +21,7 @@ public class PlayerController : MonoBehaviour {
     {
         float yRaw = Input.GetAxis(yAxis);
         float xRaw = Input.GetAxis(xAxis);
-        float triggerRaw = Input.GetAxis(triggerAxis);
-
+        float triggerRaw = Input.GetAxis(triggerAxis) > 0f ? 1f : 0f;
 
         rb.AddForce(transform.forward * triggerRaw * movSpeed * Time.deltaTime, ForceMode.Impulse);
 

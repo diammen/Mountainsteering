@@ -23,7 +23,12 @@ public class PlayerController : MonoBehaviour {
         float xRaw = Input.GetAxis(xAxis);
         float triggerRaw = Input.GetAxis(triggerAxis) > 0f ? 1f : 0f;
 
-        rb.AddForce(transform.forward * triggerRaw * movSpeed * Time.deltaTime, ForceMode.Impulse);
+        rb.AddForce(new Vector3(transform.forward.x, 0, transform.forward.z) * triggerRaw * movSpeed * Time.deltaTime, ForceMode.Impulse);
+
+        //RaycastHit hit;
+        //Physics.Raycast(transform.position, transform.forward, out hit);
+        //Debug.DrawRay(transform.position, transform.forward);
+        //transform.up -= (transform.up - hit.normal) * 0.1f;
 
         if (Input.GetAxis(xAxis) != 0 || Input.GetAxis(yAxis) != 0)
         {
@@ -31,7 +36,8 @@ public class PlayerController : MonoBehaviour {
 
             Quaternion newRot = Quaternion.Euler(rotInput);
 
-            rb.rotation = Quaternion.Lerp(transform.rotation, newRot, rotSpeed * Time.deltaTime);
+            transform.rotation = Quaternion.Lerp(transform.rotation, newRot, rotSpeed * Time.deltaTime);
         }
+
     }
 }

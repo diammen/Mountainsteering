@@ -21,9 +21,10 @@ public class PlayerController : MonoBehaviour {
     {
         float yRaw = Input.GetAxis(yAxis);
         float xRaw = Input.GetAxis(xAxis);
-        float triggerRaw = Mathf.Clamp(Input.GetAxis(triggerAxis), -1, 0);
+        float triggerRaw = Input.GetAxis(triggerAxis);
 
-        rb.AddForce(transform.forward * triggerRaw * movSpeed * Time.deltaTime);
+
+        rb.AddForce(transform.forward * triggerRaw * movSpeed * Time.deltaTime, ForceMode.Impulse);
 
         Vector3 rotInput = new Vector3(0, Mathf.Atan2(xRaw, yRaw) * Mathf.Rad2Deg, 0);
 

@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23767721674824482}
   - component: {fileID: 65828996157639908}
   m_Layer: 0
-  m_Name: New Prefab
+  m_Name: Bkgd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

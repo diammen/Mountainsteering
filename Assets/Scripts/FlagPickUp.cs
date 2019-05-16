@@ -5,6 +5,7 @@ using UnityEngine;
 public class FlagPickUp : MonoBehaviour {
 
     public bool hasFlag = false;
+    public string dropFlag;
 
 	// Update is called once per frame
 	void Update () {
@@ -13,7 +14,7 @@ public class FlagPickUp : MonoBehaviour {
 
         //transform.position = new Vector3(transform.position.x + xRaw * speed * Time.deltaTime, transform.position.y, transform.position.z + yRaw * speed * Time.deltaTime);
 
-        if (Input.GetButtonDown("Fire1") && hasFlag == true)
+        if (Input.GetButtonDown(dropFlag) && hasFlag == true)
         {
             DropFlag();
         }

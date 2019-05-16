@@ -18,7 +18,6 @@ public class FlagPickUp : MonoBehaviour {
         {
             DropFlag();
         }
-
     }
 
 

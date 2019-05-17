@@ -27,6 +27,7 @@ public class FlagPickUp : MonoBehaviour {
     {
 
         transform.Find("Flag").position = transform.position - transform.forward*3;
+        transform.Find("Flag").GetComponent<BoxCollider>().enabled = true;
         transform.Find("Flag").transform.parent = null;
         hasFlag = false;
     }

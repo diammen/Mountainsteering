@@ -603,13 +603,8 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-<<<<<<< HEAD
-  m_IsActive: 0
---- !u!1 &1858268032188958
-=======
   m_IsActive: 1
 --- !u!1 &1717756146326842
->>>>>>> 7f215de337ac3194e29ee58dddd3046e4985b243
 GameObject:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1214,30 +1209,7 @@ Transform:
   m_Father: {fileID: 4887601131447564}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
---- !u!4 &4622118021995986
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1688139536960866}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.5, y: -425.5, z: 275.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4139479470278260}
-  - {fileID: 4490081209575620}
-  - {fileID: 4140060908314638}
-  - {fileID: 4932894466652060}
-  - {fileID: 4709462550266192}
-  - {fileID: 4789261043226334}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4661529409858682
-=======
 --- !u!4 &4727862922856472
->>>>>>> 7f215de337ac3194e29ee58dddd3046e4985b243
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1745,9 +1717,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9a972efcfc36444ea3b401e1363a0ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xAxis: RightHorizontal1
-  yAxis: RightVertical1
-  rotSpeed: 5
+  xAxis: RightHorizontal2
+  yAxis: RightVertical2
+  rotSpeed: 15
 --- !u!114 &114115081624262662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1760,17 +1732,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-<<<<<<< HEAD
   xAxis: Horizontal2
   yAxis: Vertical2
   triggerAxis: LeftBumper2
   movSpeed: 100
-=======
-  xAxis: Horizontal1
-  yAxis: Vertical1
-  triggerAxis: LeftTrigger1
-  movSpeed: 50
->>>>>>> 7f215de337ac3194e29ee58dddd3046e4985b243
   rotSpeed: 5
 --- !u!114 &114656218090160650
 MonoBehaviour:
@@ -1824,6 +1789,6 @@ MonoBehaviour:
   firePosition: {fileID: 4058719285556162, guid: 044fa47a045036b4fb32fb26913b7b36,
     type: 2}
   triggerAxis: RightBumper1
-  timeToFire: 0.1
+  timeToFire: 0.2
   timeStamp: 0
   bulletSpeed: 35

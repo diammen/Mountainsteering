@@ -118,21 +118,21 @@ InputManager:
     axis: 3
     joyNum: 4
   - serializedVersion: 3
-    m_Name: asdf
+    m_Name: RightVertical4
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
     altNegativeButton: 
     altPositiveButton: 
-    gravity: 1000
-    dead: 0.001
-    sensitivity: 1000
+    gravity: 1
+    dead: 0.19
+    sensitivity: 1
     snap: 0
     invert: 0
-    type: 0
-    axis: 2
-    joyNum: 3
+    type: 2
+    axis: 4
+    joyNum: 4
   - serializedVersion: 3
     m_Name: asdf
     descriptiveName: 

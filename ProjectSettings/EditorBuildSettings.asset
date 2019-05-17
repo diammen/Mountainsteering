@@ -9,9 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 503e4264fe2a2a94eae44af0650147a2
   - enabled: 1
-    path: Assets/Scenes/WinScreen.unity
+    path: Assets/Scenes/WinScreen_P1.unity
     guid: b8f448633297bed4fa91f962e13f699f
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 0a130e6368799ed4b90a3ca5113837f5
+  - enabled: 1
+    path: Assets/Scenes/JoshuaTestScene.unity
+    guid: 7c4639e6a711cce4898367ea9b0392ae
   m_configObjects: {}

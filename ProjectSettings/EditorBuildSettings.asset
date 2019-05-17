@@ -5,13 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+<<<<<<< HEAD
   - enabled: 0
+=======
+  - enabled: 1
+>>>>>>> fc4ef213b3beca4c685e87aa0a0746897d3fe1b2
     path: Assets/Scenes/MarcelScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 0
     path: Assets/Scenes/sandbox.unity
     guid: 502392ff15f821845bdf894c19a542f7
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/JoshuaTestScene.unity
     guid: 7c4639e6a711cce4898367ea9b0392ae
+=======
+    path: Assets/Scenes/WinScreen.unity
+    guid: b8f448633297bed4fa91f962e13f699f
+>>>>>>> fc4ef213b3beca4c685e87aa0a0746897d3fe1b2
   m_configObjects: {}

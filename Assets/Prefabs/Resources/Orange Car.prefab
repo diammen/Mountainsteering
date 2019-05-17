@@ -1732,7 +1732,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   firePosition: {fileID: 4456405931578730}
-  triggerAxis: RightBumper1
+  triggerAxis: RightBumper2
   timeToFire: 0.1
   timeStamp: 0
   bulletSpeed: 25
@@ -1747,8 +1747,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9a972efcfc36444ea3b401e1363a0ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xAxis: RightHorizontal1
-  yAxis: RightVertical1
+  xAxis: RightHorizontal2
+  yAxis: RightVertical2
   rotSpeed: 5
 --- !u!114 &114654384476085124
 MonoBehaviour:
@@ -1762,9 +1762,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  xAxis: Horizontal1
-  yAxis: Vertical1
-  triggerAxis: LeftTrigger1
+  xAxis: Horizontal2
+  yAxis: Vertical2
+  triggerAxis: LeftTrigger2
   movSpeed: 50
   rotSpeed: 5
 --- !u!114 &114844496889482562
@@ -1779,7 +1779,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasFlag: 0
-  dropFlag: Fire11
 --- !u!146 &146491770134341646
 WheelCollider:
   m_ObjectHideFlags: 1

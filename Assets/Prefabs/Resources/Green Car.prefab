@@ -100,8 +100,13 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD
+  m_IsActive: 0
+--- !u!1 &1133446625769928
+=======
   m_IsActive: 1
 --- !u!1 &1071637923450338
+>>>>>>> 7f215de337ac3194e29ee58dddd3046e4985b243
 GameObject:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1410,15 +1415,25 @@ Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 1594331434383324}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.62, y: -425.5, z: 276.6}
+=======
   m_GameObject: {fileID: 1279067563381300}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
+>>>>>>> 7f215de337ac3194e29ee58dddd3046e4985b243
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4233297054936656}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+--- !u!4 &4907167353574526
+=======
 --- !u!4 &4884910630654370
+>>>>>>> 7f215de337ac3194e29ee58dddd3046e4985b243
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1620,11 +1635,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e2065aba95371954788dedf219d4a598, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: cf37aaa96a4896d4d9103cb52284352c, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1717,8 +1732,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9a972efcfc36444ea3b401e1363a0ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xAxis: RightHorizontal1
-  yAxis: RightVertical1
+  xAxis: RightHorizontal3
+  yAxis: RightVertical3
   rotSpeed: 5
 --- !u!114 &114384127428660216
 MonoBehaviour:
@@ -1752,6 +1767,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+<<<<<<< HEAD
+  firePosition: {fileID: 4194906934070040}
+  triggerAxis: RightBumper3
+=======
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1760,6 +1779,7 @@ MonoBehaviour:
   firePosition: {fileID: 4058719285556162, guid: 044fa47a045036b4fb32fb26913b7b36,
     type: 2}
   triggerAxis: RightBumper1
+>>>>>>> 7f215de337ac3194e29ee58dddd3046e4985b243
   timeToFire: 0.1
   timeStamp: 0
   bulletSpeed: 35
@@ -1775,9 +1795,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
+<<<<<<< HEAD
+  xAxis: Horizontal3
+  yAxis: Vertical3
+  triggerAxis: LeftBumper3
+=======
   xAxis: Horizontal2
   yAxis: Vertical2
   triggerAxis: LeftTrigger2
+>>>>>>> 7f215de337ac3194e29ee58dddd3046e4985b243
   movSpeed: 50
   rotSpeed: 5
 --- !u!114 &114598135366097642

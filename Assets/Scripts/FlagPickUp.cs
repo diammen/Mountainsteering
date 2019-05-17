@@ -26,6 +26,9 @@ public class FlagPickUp : MonoBehaviour {
     public void DropFlag()
     {
         Transform flag = transform.Find("Flag");
+        if(flag == null) {
+            flag = transform.Find("Flag(Clone)");
+        }
         flag.position = transform.position - transform.forward*3;
         flag.rotation = Quaternion.Euler(new Vector3(30, 0, 0));
         flag.GetComponent<BoxCollider>().enabled = true;

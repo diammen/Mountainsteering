@@ -1781,8 +1781,14 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  firePosition: {fileID: 4834023950010456}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  firePosition: {fileID: 4058719285556162, guid: 044fa47a045036b4fb32fb26913b7b36,
+    type: 2}
   triggerAxis: RightBumper1
   timeToFire: 0.1
   timeStamp: 0
-  bulletSpeed: 25
+  bulletSpeed: 35

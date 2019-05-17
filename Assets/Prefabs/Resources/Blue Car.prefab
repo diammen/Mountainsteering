@@ -1755,11 +1755,16 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   firePosition: {fileID: 4058719285556162}
   triggerAxis: RightBumper1
   timeToFire: 0.1
   timeStamp: 0
-  bulletSpeed: 25
+  bulletSpeed: 35
 --- !u!114 &114634224232057762
 MonoBehaviour:
   m_ObjectHideFlags: 1

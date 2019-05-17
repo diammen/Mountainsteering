@@ -1,24 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using XInputDotNetPure;
 
 public class GunTurret : MonoBehaviour
 {
 
-    public string xAxis, yAxis;
+    //public string xAxis, yAxis;
     public float rotSpeed;
-
-    // Use this for initialization
-    void Start()
-    {
-
-    }
+    public PlayerIndex index;
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        float xRaw = Input.GetAxis(xAxis);
-        float yRaw = Input.GetAxis(yAxis);
+        GamePadState state = GamePad.GetState(index);
+        //float xRaw = Input.GetAxis(xAxis);
+        //float yRaw = Input.GetAxis(yAxis);
+        float yRaw = state.ThumbSticks.Right.Y;
+        float xRaw = state.ThumbSticks.Right.X;
 
         if (xRaw != 0 || yRaw != 0)
         {

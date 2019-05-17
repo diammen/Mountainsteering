@@ -1,16 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using XInputDotNetPure;
 
 public class PlayerShoot : MonoBehaviour {
 
     public GameObject[] bullets;
     public Transform firePosition;
-    public string triggerAxis;
+    //public string triggerAxis;
     public float timeToFire, timeStamp;
     public float bulletSpeed;
-
+    public PlayerIndex index;
     private AudioSource shootSound;
+    GamePadState state;
 
 	// Use this for initialization
 	void Start () {
@@ -25,20 +27,19 @@ public class PlayerShoot : MonoBehaviour {
         }
 
         shootSound = GetComponent<AudioSource>();
-
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        float triggerRaw = Input.GetAxis(triggerAxis);
-
+        GamePadState state = GamePad.GetState(index);
+        //float triggerRaw = Input.GetAxis(triggerAxis);
+        float triggerRaw = state.Buttons.RightShoulder == ButtonState.Pressed ? 1f : 0f;
         // if there's input
         if (triggerRaw != 0)
         {
             // if it's time to fire
             if (Time.time - timeStamp > timeToFire)
             {
-
                 FireBullet();
                 shootSound.Play();
                 timeStamp = Time.time;

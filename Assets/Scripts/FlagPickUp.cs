@@ -15,6 +15,7 @@ public class FlagPickUp : MonoBehaviour {
     {
         if (other.CompareTag("Bullet"))
         {
+            print("got hit by " + other.name);
             if (hasFlag)
             {
                 DropFlag();

@@ -16,7 +16,6 @@ public class Score : MonoBehaviour {
     {
         if (score >= 3)
         {
-            //LoadWinningScene;
         }
     }
 }

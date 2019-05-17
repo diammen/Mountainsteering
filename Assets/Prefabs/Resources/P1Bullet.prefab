@@ -24,8 +24,8 @@ GameObject:
   - component: {fileID: 54658397840388974}
   - component: {fileID: 114420911890594954}
   m_Layer: 0
-  m_Name: bullet
-  m_TagString: Bullet
+  m_Name: P1Bullet
+  m_TagString: P1Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,7 +106,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.05
+  m_Time: 0.1
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 1

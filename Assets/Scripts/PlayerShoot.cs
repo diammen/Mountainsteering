@@ -14,10 +14,10 @@ public class PlayerShoot : MonoBehaviour {
     public PlayerIndex index;
     private AudioSource shootSound;
     GamePadState state;
-
+    public string bullet;
 	// Use this for initialization
 	void Start () {
-        var bul = Resources.Load<GameObject>("bullet");
+        var bul = Resources.Load<GameObject>(bullet);
 
         // create object pool
         for (int i = 0; i < bullets.Length; i++)

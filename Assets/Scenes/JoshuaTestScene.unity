@@ -181,16 +181,6 @@ Prefab:
     - {fileID: 114105783201570496, guid: 18b4b17711f37314d86863169149932b, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 18b4b17711f37314d86863169149932b, type: 2}
   m_IsPrefabAsset: 0
---- !u!198 &109480502 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 198163531411082650, guid: faf62f0bbabd49648b8175b97f917429,
-    type: 2}
-  m_PrefabInternal: {fileID: 400543387}
---- !u!198 &110027438 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 198038151584485128, guid: 044fa47a045036b4fb32fb26913b7b36,
-    type: 2}
-  m_PrefabInternal: {fileID: 774031884}
 --- !u!1001 &200357304
 Prefab:
   m_ObjectHideFlags: 0
@@ -349,11 +339,6 @@ Prefab:
     - {fileID: 114105783201570496, guid: 18b4b17711f37314d86863169149932b, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 18b4b17711f37314d86863169149932b, type: 2}
   m_IsPrefabAsset: 0
---- !u!198 &335435781 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 198348801240975450, guid: 5fbb43d1adbeaf74393ec604adcc8358,
-    type: 2}
-  m_PrefabInternal: {fileID: 891067880}
 --- !u!1 &352448552 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1575108480980738, guid: 18b4b17711f37314d86863169149932b,
@@ -505,6 +490,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!198 &397586790 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198494244465561564, guid: 5fbb43d1adbeaf74393ec604adcc8358,
+    type: 2}
+  m_PrefabInternal: {fileID: 891067880}
 --- !u!1001 &400543387
 Prefab:
   m_ObjectHideFlags: 0
@@ -582,7 +572,7 @@ Prefab:
         type: 2}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 109480502}
+      objectReference: {fileID: 1658927995}
     - target: {fileID: 4111346170335064, guid: faf62f0bbabd49648b8175b97f917429, type: 2}
       propertyPath: m_LocalScale.x
       value: 1.5
@@ -604,6 +594,16 @@ Prefab:
         type: 2}
       propertyPath: timeToFire
       value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114028507859669862, guid: faf62f0bbabd49648b8175b97f917429,
+        type: 2}
+      propertyPath: bullet
+      value: P4Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 114390072759220746, guid: faf62f0bbabd49648b8175b97f917429,
+        type: 2}
+      propertyPath: playerId
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114575708762396594, guid: faf62f0bbabd49648b8175b97f917429, type: 2}
@@ -927,6 +927,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbd7c84c18b17a34ba8bf3c9c55b9908, type: 2}
   m_IsPrefabAsset: 0
+--- !u!198 &591785896 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198509860102436698, guid: 044fa47a045036b4fb32fb26913b7b36,
+    type: 2}
+  m_PrefabInternal: {fileID: 774031884}
 --- !u!1 &689588351 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1575108480980738, guid: 18b4b17711f37314d86863169149932b,
@@ -1161,7 +1166,7 @@ Prefab:
         type: 2}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 110027438}
+      objectReference: {fileID: 591785896}
     - target: {fileID: 4929274398816854, guid: 044fa47a045036b4fb32fb26913b7b36, type: 2}
       propertyPath: m_LocalScale.x
       value: 1.5
@@ -1183,6 +1188,16 @@ Prefab:
         type: 2}
       propertyPath: timeToFire
       value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114412782848113696, guid: 044fa47a045036b4fb32fb26913b7b36,
+        type: 2}
+      propertyPath: bullet
+      value: P2Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 114687150217231982, guid: 044fa47a045036b4fb32fb26913b7b36,
+        type: 2}
+      propertyPath: playerId
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 044fa47a045036b4fb32fb26913b7b36, type: 2}
@@ -1539,7 +1554,7 @@ Prefab:
         type: 2}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 335435781}
+      objectReference: {fileID: 397586790}
     - target: {fileID: 4701749594510910, guid: 5fbb43d1adbeaf74393ec604adcc8358, type: 2}
       propertyPath: m_LocalScale.x
       value: 1.5
@@ -1561,6 +1576,16 @@ Prefab:
         type: 2}
       propertyPath: timeToFire
       value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114384127428660216, guid: 5fbb43d1adbeaf74393ec604adcc8358,
+        type: 2}
+      propertyPath: bullet
+      value: P3Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 114598135366097642, guid: 5fbb43d1adbeaf74393ec604adcc8358,
+        type: 2}
+      propertyPath: playerId
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fbb43d1adbeaf74393ec604adcc8358, type: 2}
@@ -2334,6 +2359,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 982f0611c20a75c4f97f09bb2ac1d929, type: 2}
   m_IsPrefabAsset: 0
+--- !u!198 &1658927995 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198974349359709730, guid: faf62f0bbabd49648b8175b97f917429,
+    type: 2}
+  m_PrefabInternal: {fileID: 400543387}
 --- !u!4 &1700220063 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4553614660774180, guid: 5fbb43d1adbeaf74393ec604adcc8358,
@@ -2634,6 +2664,16 @@ Prefab:
         type: 2}
       propertyPath: timeToFire
       value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114960487464100094, guid: 936a59b1dc3a1b64bb9afb40b101bb7c,
+        type: 2}
+      propertyPath: bullet
+      value: P1Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 114656218090160650, guid: 936a59b1dc3a1b64bb9afb40b101bb7c,
+        type: 2}
+      propertyPath: playerId
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 936a59b1dc3a1b64bb9afb40b101bb7c, type: 2}

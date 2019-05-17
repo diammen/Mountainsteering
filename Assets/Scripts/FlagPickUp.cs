@@ -5,6 +5,8 @@ using UnityEngine;
 public class FlagPickUp : MonoBehaviour {
 
     public bool hasFlag = false;
+    public int playerId;
+
 
     public void PickUpFlag()
     {
@@ -13,14 +15,46 @@ public class FlagPickUp : MonoBehaviour {
     
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Bullet"))
+        if (playerId == 1)
         {
-            print("got hit by " + other.name);
-            if (hasFlag)
+            if (other.CompareTag("P2Bullet") || other.CompareTag("P3Bullet") || other.CompareTag("P4Bullet"))
             {
-                DropFlag();
+                if (hasFlag)
+                {
+                    DropFlag();
+                }
+            }
+        } else if (playerId == 2)
+        {
+            if (other.CompareTag("P1Bullet") || other.CompareTag("P3Bullet") || other.CompareTag("P4Bullet"))
+            {
+                if (hasFlag)
+                {
+                    DropFlag();
+                }
             }
         }
+        else if (playerId == 3)
+        {
+            if (other.CompareTag("P1Bullet") || other.CompareTag("P2Bullet") || other.CompareTag("P4Bullet"))
+            {
+                if (hasFlag)
+                {
+                    DropFlag();
+                }
+            }
+        }
+        else if (playerId == 4)
+        {
+            if (other.CompareTag("P1Bullet") || other.CompareTag("P2Bullet") || other.CompareTag("P3Bullet"))
+            {
+                if (hasFlag)
+                {
+                    DropFlag();
+                }
+            }
+        }
+
     }
 
     //Drops the flag behind the player

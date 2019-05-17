@@ -11,6 +11,7 @@ public class Flag : MonoBehaviour {
             transform.parent = other.transform;
             transform.localPosition = other.transform.Find("FlagPole").transform.localPosition;
             other.GetComponent<FlagPickUp>().PickUpFlag();
+            GetComponent<BoxCollider>().enabled = false;
         }
     }
 }

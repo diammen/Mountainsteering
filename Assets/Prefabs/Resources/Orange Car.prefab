@@ -603,8 +603,13 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD
+  m_IsActive: 0
+--- !u!1 &1858268032188958
+=======
   m_IsActive: 1
 --- !u!1 &1717756146326842
+>>>>>>> 7f215de337ac3194e29ee58dddd3046e4985b243
 GameObject:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1209,7 +1214,30 @@ Transform:
   m_Father: {fileID: 4887601131447564}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+--- !u!4 &4622118021995986
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1688139536960866}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -29.5, y: -425.5, z: 275.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4139479470278260}
+  - {fileID: 4490081209575620}
+  - {fileID: 4140060908314638}
+  - {fileID: 4932894466652060}
+  - {fileID: 4709462550266192}
+  - {fileID: 4789261043226334}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4661529409858682
+=======
 --- !u!4 &4727862922856472
+>>>>>>> 7f215de337ac3194e29ee58dddd3046e4985b243
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1543,7 +1571,7 @@ MeshRenderer:
   m_GameObject: {fileID: 1831278288722650}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -1620,11 +1648,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e2065aba95371954788dedf219d4a598, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: cf37aaa96a4896d4d9103cb52284352c, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1732,10 +1760,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
+<<<<<<< HEAD
+  xAxis: Horizontal2
+  yAxis: Vertical2
+  triggerAxis: LeftBumper2
+  movSpeed: 100
+=======
   xAxis: Horizontal1
   yAxis: Vertical1
   triggerAxis: LeftTrigger1
   movSpeed: 50
+>>>>>>> 7f215de337ac3194e29ee58dddd3046e4985b243
   rotSpeed: 5
 --- !u!114 &114656218090160650
 MonoBehaviour:

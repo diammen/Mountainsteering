@@ -504,10 +504,10 @@ GameObject:
   - component: {fileID: 4929274398816854}
   - component: {fileID: 54710588432040656}
   - component: {fileID: 65629370833542644}
-  - component: {fileID: 114133446271741950}
   - component: {fileID: 114687150217231982}
   - component: {fileID: 114412782848113696}
   - component: {fileID: 82769864314369844}
+  - component: {fileID: 114606972758248058}
   m_Layer: 0
   m_Name: Blue Car
   m_TagString: Player
@@ -1409,8 +1409,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1528591314153310}
+<<<<<<< HEAD
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -16, y: -425.5, z: 276.6}
+=======
   m_LocalRotation: {x: -0.0000005066395, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.8431787, y: -1.85, z: -0.039811134}
+>>>>>>> 7f215de337ac3194e29ee58dddd3046e4985b243
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4424844655080314}
@@ -1420,7 +1425,7 @@ Transform:
   - {fileID: 4376189552268016}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 60.000004, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4937740824844000
 Transform:
   m_ObjectHideFlags: 1
@@ -1508,7 +1513,7 @@ MeshRenderer:
   m_GameObject: {fileID: 1990518922148878}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -1609,8 +1614,13 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
+<<<<<<< HEAD
+  m_Size: {x: 2, y: 1.5, z: 3}
+  m_Center: {x: 0, y: 0.6, z: 0}
+=======
   m_Size: {x: 2, y: 1.35, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: 0}
+>>>>>>> 7f215de337ac3194e29ee58dddd3046e4985b243
 --- !u!82 &82769864314369844
 AudioSource:
   m_ObjectHideFlags: 1
@@ -1620,11 +1630,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e2065aba95371954788dedf219d4a598, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: cf37aaa96a4896d4d9103cb52284352c, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1706,23 +1716,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &114133446271741950
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1528591314153310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4b34eb11f7c1bb41bd846f5a6f8f507, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  xAxis: Horizontal1
-  yAxis: Vertical1
-  triggerAxis: LeftTrigger1
-  movSpeed: 50
-  rotSpeed: 5
 --- !u!114 &114412782848113696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1764,7 +1757,28 @@ MonoBehaviour:
   triggerAxis: RightBumper1
   timeToFire: 0.1
   timeStamp: 0
+<<<<<<< HEAD
+  bulletSpeed: 25
+--- !u!114 &114606972758248058
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1528591314153310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4b34eb11f7c1bb41bd846f5a6f8f507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 54710588432040656}
+  xAxis: Horizontal1
+  yAxis: Vertical1
+  triggerAxis: LeftBumper1
+  movSpeed: 100
+  rotSpeed: 5
+=======
   bulletSpeed: 35
+>>>>>>> 7f215de337ac3194e29ee58dddd3046e4985b243
 --- !u!114 &114634224232057762
 MonoBehaviour:
   m_ObjectHideFlags: 1

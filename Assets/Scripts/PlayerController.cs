@@ -10,9 +10,11 @@ public class PlayerController : MonoBehaviour {
     public float movSpeed;
     public float rotSpeed;
 
+    Camera cam;
     // Use this for initialization
     void Start()
     {
+        cam = Camera.main;
         rb = GetComponent<Rigidbody>();
     }
 
@@ -35,6 +37,7 @@ public class PlayerController : MonoBehaviour {
             // turn player towards direction of joystick
             transform.rotation = Quaternion.Lerp(transform.rotation, newRot, rotSpeed * Time.deltaTime);
         }
+
 
     }
 }

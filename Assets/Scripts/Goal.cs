@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Goal : MonoBehaviour {
 
+    public string playerName;
+
 	void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")){
+        if (other.gameObject.name == playerName){
             if (other.GetComponent<FlagPickUp>().hasFlag == true)
             {
                 print(other.name + " wins");

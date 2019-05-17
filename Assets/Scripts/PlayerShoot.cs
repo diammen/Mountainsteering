@@ -10,6 +10,8 @@ public class PlayerShoot : MonoBehaviour {
     public float timeToFire, timeStamp;
     public float bulletSpeed;
 
+    private AudioSource shootSound;
+
 	// Use this for initialization
 	void Start () {
         var bul = Resources.Load<GameObject>("bullet");
@@ -21,6 +23,9 @@ public class PlayerShoot : MonoBehaviour {
 
             bullets[i] = temp;
         }
+
+        shootSound = GetComponent<AudioSource>();
+
 	}
 	
 	// Update is called once per frame
@@ -33,7 +38,9 @@ public class PlayerShoot : MonoBehaviour {
             // if it's time to fire
             if (Time.time - timeStamp > timeToFire)
             {
+
                 FireBullet();
+                shootSound.Play();
                 timeStamp = Time.time;
             }
         }

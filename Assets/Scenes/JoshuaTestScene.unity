@@ -770,6 +770,52 @@ MonoBehaviour:
   - {fileID: 887895849}
   - {fileID: 422573448}
   - {fileID: 1518288493}
+--- !u!1001 &569464981
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4228957570681780, guid: bbd7c84c18b17a34ba8bf3c9c55b9908, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4228957570681780, guid: bbd7c84c18b17a34ba8bf3c9c55b9908, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4228957570681780, guid: bbd7c84c18b17a34ba8bf3c9c55b9908, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4228957570681780, guid: bbd7c84c18b17a34ba8bf3c9c55b9908, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4228957570681780, guid: bbd7c84c18b17a34ba8bf3c9c55b9908, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4228957570681780, guid: bbd7c84c18b17a34ba8bf3c9c55b9908, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4228957570681780, guid: bbd7c84c18b17a34ba8bf3c9c55b9908, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4228957570681780, guid: bbd7c84c18b17a34ba8bf3c9c55b9908, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208090319598964, guid: bbd7c84c18b17a34ba8bf3c9c55b9908, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.91
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bbd7c84c18b17a34ba8bf3c9c55b9908, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &689588351 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1575108480980738, guid: 18b4b17711f37314d86863169149932b,

@@ -10,11 +10,9 @@ public class PlayerController : MonoBehaviour {
     public float movSpeed;
     public float rotSpeed;
 
-    Camera cam;
     // Use this for initialization
     void Start()
     {
-        cam = Camera.main;
         rb = GetComponent<Rigidbody>();
     }
 

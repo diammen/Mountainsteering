@@ -25,10 +25,11 @@ public class FlagPickUp : MonoBehaviour {
     //Drops the flag behind the player
     public void DropFlag()
     {
-
-        transform.Find("Flag").position = transform.position - transform.forward*3;
-        transform.Find("Flag").GetComponent<BoxCollider>().enabled = true;
-        transform.Find("Flag").transform.parent = null;
+        Transform flag = transform.Find("Flag");
+        flag.position = transform.position - transform.forward*3;
+        flag.rotation = Quaternion.Euler(new Vector3(30, 0, 0));
+        flag.GetComponent<BoxCollider>().enabled = true;
+        flag.transform.parent = null;
         hasFlag = false;
     }
 }

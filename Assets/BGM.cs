@@ -2,10 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BGM : MonoBehaviour {
+public class BGM : MonoBehaviour
+{
 
-	void Awake()
+    private static BGM instance = null;
+    public static BGM Instance
     {
-        DontDestroyOnLoad(gameObject);
+        get
+        {
+            if (instance == null)
+            {
+                instance = (BGM)FindObjectOfType(typeof(BGM));
+            }
+            return instance;
+        }
+    }
+    void Awake()
+    {
+        if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
     }
 }
+

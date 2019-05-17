@@ -1479,8 +1479,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1850985519587730}
   m_LocalRotation: {x: -0.0000005066395, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.678972, y: -2.043848, z: -7.7113647}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 16.18, y: 0.2, z: 1.4700001}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 4233297054936656}
   - {fileID: 4162067414991798}
@@ -1733,7 +1733,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 1.35, z: 2.5}
+  m_Size: {x: 1.5, y: 1.35, z: 2}
   m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!82 &82525813715276442
 AudioSource:
@@ -1842,7 +1842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotSpeed: 15
-  index: 0
+  index: 2
 --- !u!114 &114384127428660216
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1882,11 +1882,12 @@ MonoBehaviour:
   - {fileID: 0}
   firePosition: {fileID: 4553614660774180}
   triggerAxis: RightBumper3
-  muzzleFlash: {fileID: 0}
-  timeToFire: 0.2
+  muzzleFlash: {fileID: 198494244465561564}
+  timeToFire: 0.4
   timeStamp: 0
-  bulletSpeed: 35
-  index: 0
+  bulletSpeed: 45
+  index: 2
+  bullet: P3Bullet
 --- !u!114 &114425128523213028
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1901,7 +1902,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   movSpeed: 100
   rotSpeed: 5
-  index: 0
+  index: 2
 --- !u!114 &114598135366097642
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1914,6 +1915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasFlag: 0
+  playerId: 3
 --- !u!198 &198383888770675784
 ParticleSystem:
   m_ObjectHideFlags: 1

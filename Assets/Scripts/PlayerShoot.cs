@@ -6,6 +6,7 @@ public class PlayerShoot : MonoBehaviour {
 
     public GameObject[] bullets;
     public Transform firePosition;
+    public ParticleSystem muzzleFlash;
     public string triggerAxis;
     public float timeToFire, timeStamp;
     public float bulletSpeed;
@@ -59,6 +60,7 @@ public class PlayerShoot : MonoBehaviour {
                 bul.transform.position = firePosition.position;
                 bul.transform.rotation = firePosition.rotation;
                 bul.GetComponent<Rigidbody>().AddForce(bul.transform.forward * bulletSpeed, ForceMode.Impulse);
+                muzzleFlash.Play();
                 break;
             }
         }

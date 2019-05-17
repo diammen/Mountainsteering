@@ -5,7 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Flag
-  - Bullet
+  - Fire
+  - P1Bullet
+  - P2Bullet
+  - P3Bullet
+  - P4Bullet
   layers:
   - Default
   - TransparentFX

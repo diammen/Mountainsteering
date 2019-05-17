@@ -504,10 +504,10 @@ GameObject:
   - component: {fileID: 4929274398816854}
   - component: {fileID: 54710588432040656}
   - component: {fileID: 65629370833542644}
+  - component: {fileID: 114606972758248058}
   - component: {fileID: 114687150217231982}
   - component: {fileID: 114412782848113696}
   - component: {fileID: 82769864314369844}
-  - component: {fileID: 114606972758248058}
   m_Layer: 0
   m_Name: Blue Car
   m_TagString: Player
@@ -1409,13 +1409,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1528591314153310}
-<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -16, y: -425.5, z: 276.6}
-=======
-  m_LocalRotation: {x: -0.0000005066395, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.8431787, y: -1.85, z: -0.039811134}
->>>>>>> 7f215de337ac3194e29ee58dddd3046e4985b243
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4424844655080314}
@@ -1614,13 +1609,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-<<<<<<< HEAD
-  m_Size: {x: 2, y: 1.5, z: 3}
-  m_Center: {x: 0, y: 0.6, z: 0}
-=======
   m_Size: {x: 2, y: 1.35, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: 0}
->>>>>>> 7f215de337ac3194e29ee58dddd3046e4985b243
 --- !u!82 &82769864314369844
 AudioSource:
   m_ObjectHideFlags: 1
@@ -1755,10 +1745,9 @@ MonoBehaviour:
   - {fileID: 0}
   firePosition: {fileID: 4058719285556162}
   triggerAxis: RightBumper1
-  timeToFire: 0.1
+  timeToFire: 0.2
   timeStamp: 0
-<<<<<<< HEAD
-  bulletSpeed: 25
+  bulletSpeed: 35
 --- !u!114 &114606972758248058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1776,9 +1765,6 @@ MonoBehaviour:
   triggerAxis: LeftBumper1
   movSpeed: 100
   rotSpeed: 5
-=======
-  bulletSpeed: 35
->>>>>>> 7f215de337ac3194e29ee58dddd3046e4985b243
 --- !u!114 &114634224232057762
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1792,7 +1778,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xAxis: RightHorizontal1
   yAxis: RightVertical1
-  rotSpeed: 5
+  rotSpeed: 15
 --- !u!114 &114687150217231982
 MonoBehaviour:
   m_ObjectHideFlags: 1

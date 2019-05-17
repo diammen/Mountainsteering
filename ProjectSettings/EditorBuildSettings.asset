@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/JoshuaTestScene.unity
     guid: 7c4639e6a711cce4898367ea9b0392ae
+  - enabled: 1
+    path: Assets/Scenes/WinScreen_P4.unity
+    guid: ca95999ffffc1164cbfb454d5626defb
+  - enabled: 1
+    path: Assets/Scenes/WinScreen_P3.unity
+    guid: 9408b25bbb7a98d48b3cd30765c469bb
+  - enabled: 1
+    path: Assets/Scenes/WinScreen_P2.unity
+    guid: 131b9cba8cb856542abce09cc40b2cd3
   m_configObjects: {}

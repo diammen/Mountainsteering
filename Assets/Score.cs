@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Score : MonoBehaviour {
 
     [SerializeField] int score = 0;
     [SerializeField] GameObject[] scoreFlags;
+    [SerializeField] string sceneName;
+
     public void IncreaseScore()
     {
         score++;
@@ -16,7 +18,7 @@ public class Score : MonoBehaviour {
     {
         if (score >= 3)
         {
-            //LoadWinningScene;
+            SceneManager.LoadScene(sceneName);
         }
     }
 }

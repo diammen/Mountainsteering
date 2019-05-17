@@ -7,12 +7,8 @@ public class PlayerShoot : MonoBehaviour {
 
     public GameObject[] bullets;
     public Transform firePosition;
-<<<<<<< HEAD
-    //public string triggerAxis;
-=======
-    public ParticleSystem muzzleFlash;
     public string triggerAxis;
->>>>>>> aed2eabcef13018481fab502744ba443923ed5a8
+    public ParticleSystem muzzleFlash;
     public float timeToFire, timeStamp;
     public float bulletSpeed;
     public PlayerIndex index;

@@ -14,6 +14,7 @@ public class PlayerShoot : MonoBehaviour {
 	void Start () {
         var bul = Resources.Load<GameObject>("bullet");
 
+        // create object pool
         for (int i = 0; i < bullets.Length; i++)
         {
             var temp = Instantiate(bul, transform.position, transform.rotation);
@@ -26,8 +27,10 @@ public class PlayerShoot : MonoBehaviour {
 	void Update () {
         float triggerRaw = Input.GetAxis(triggerAxis);
 
+        // if there's input
         if (triggerRaw != 0)
         {
+            // if it's time to fire
             if (Time.time - timeStamp > timeToFire)
             {
                 FireBullet();
@@ -36,10 +39,12 @@ public class PlayerShoot : MonoBehaviour {
         }
 	}
 
+    // fire bullet
     void FireBullet()
     {
         foreach (GameObject bul in bullets)
         {
+            // search for first available bullet in pool
             if (!bul.activeSelf)
             {
                 bul.SetActive(true);

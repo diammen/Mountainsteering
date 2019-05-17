@@ -20,10 +20,13 @@ public class GunTurret : MonoBehaviour
         float xRaw = Input.GetAxis(xAxis);
         float yRaw = Input.GetAxis(yAxis);
 
-        Vector3 rotInput = new Vector3(0, Mathf.Atan2(xRaw, yRaw) * Mathf.Rad2Deg, 0);
+        if (xRaw != 0 || yRaw != 0)
+        {
+            Vector3 rotInput = new Vector3(0, Mathf.Atan2(xRaw, yRaw) * Mathf.Rad2Deg, 0);
 
-        Quaternion newRot = Quaternion.Euler(rotInput) * transform.parent.rotation;
+            Quaternion newRot = Quaternion.Euler(rotInput);
 
-        transform.rotation = Quaternion.Lerp(transform.rotation, newRot, rotSpeed * Time.deltaTime);
+            transform.rotation = Quaternion.Lerp(transform.rotation, newRot, rotSpeed * Time.deltaTime);
+        }
     }
 }

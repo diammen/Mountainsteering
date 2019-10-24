@@ -5,6 +5,10 @@
 ![](Assets/logo.png)
 ![](Assets/demo.gif)
 
+## Build
+[Play it on itch.io](https://diammen.itch.io/mountainsteering)
+
+
 ## Credits
 **Programming**
 

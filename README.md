@@ -9,11 +9,13 @@
 **Programming**
 
 Joshua Yang
+
 Marcel Dao
 
 **Art**
 
 Peter Neill
+
 Michael Ha
 
 **Game Design**

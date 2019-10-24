@@ -2,10 +2,10 @@
 
 3 Day AIE Game Jam Project
 
-![Unity-Chan Runner Splash Art](Assets/logo.png)
-![Unity-Chan Runner Splash Art](Assets/demo.gif)
+![](Assets/logo.png)
+![](Assets/demo.gif)
 
-##Credits]
+## Credits
 Programming
 Joshua Yang
 Marcel Dao

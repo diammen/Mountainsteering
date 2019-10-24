@@ -6,16 +6,16 @@
 ![](Assets/demo.gif)
 
 ## Credits
-*Programming*
+**Programming**
 
 Joshua Yang
 Marcel Dao
 
-*Art*
+**Art**
 
 Peter Neill
 Michael Ha
 
-*Game Design*
+**Game Design**
 
 Tyrese B
